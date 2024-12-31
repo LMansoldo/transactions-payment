@@ -49,8 +49,7 @@ function App() {
       const date = '2024-12-31'
 
       setLoadedTransactions((loadedTransactions) => [...loadedTransactions, { id: "isd943643", amount: amount, date: date }])
-    
-      console.log(transactions)
+
     }
 
     return (
@@ -63,7 +62,7 @@ function App() {
 
   const ListTransactions = () => {
     return loadedTransactions.map(({ amount, id, date }, index) => {
-        
+
       return (
         <div key={index}>
           <h3>Transaction ID: {id}</h3>
